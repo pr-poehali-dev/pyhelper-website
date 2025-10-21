@@ -45,20 +45,20 @@ const Index = () => {
             </div>
             
             <div className="hidden md:flex items-center gap-8">
-              <button onClick={() => scrollToSection('home')} className="text-foreground/80 hover:text-foreground transition-colors">
+              <button onClick={() => scrollToSection('home')} className="text-foreground/80 hover:text-foreground transition-all duration-300 hover:scale-110 active:scale-95">
                 Главная
               </button>
-              <button onClick={() => scrollToSection('features')} className="text-foreground/80 hover:text-foreground transition-colors">
+              <button onClick={() => scrollToSection('features')} className="text-foreground/80 hover:text-foreground transition-all duration-300 hover:scale-110 active:scale-95">
                 Возможности
               </button>
-              <button onClick={() => scrollToSection('download')} className="text-foreground/80 hover:text-foreground transition-colors">
+              <button onClick={() => scrollToSection('download')} className="text-foreground/80 hover:text-foreground transition-all duration-300 hover:scale-110 active:scale-95">
                 Скачать
               </button>
             </div>
             
             <Button 
               onClick={() => scrollToSection('download')}
-              className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity"
+              className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-all duration-300 hover:scale-105 active:scale-95"
             >
               Скачать
             </Button>
