@@ -215,8 +215,8 @@ const Index = () => {
               <span className="font-semibold">PyHelper</span>
             </div>
             
-            <div className="text-sm text-muted-foreground">
-              © 2025 PyHelper. Все права защищены.
+            <div className="text-sm text-muted-foreground text-center md:text-right">
+              Данный сайт был разработан для индивидуального проекта PyHelper, созданного TimohaGeimer
             </div>
           </div>
         </div>
