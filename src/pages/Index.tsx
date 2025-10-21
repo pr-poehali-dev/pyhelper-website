@@ -14,11 +14,6 @@ const Index = () => {
       description: "Контекстная помощь по синтаксису Python в режиме реального времени"
     },
     {
-      icon: "Lightbulb",
-      title: "Примеры кода",
-      description: "Библиотека готовых решений для типовых задач программирования"
-    },
-    {
       icon: "BookOpen",
       title: "Документация",
       description: "Быстрый доступ к официальной документации Python и популярных библиотек"
@@ -32,11 +27,6 @@ const Index = () => {
       icon: "Bug",
       title: "Отладка",
       description: "Помощь в поиске и исправлении ошибок с подробными объяснениями"
-    },
-    {
-      icon: "Sparkles",
-      title: "AI-ассистент",
-      description: "Интеллектуальные ответы на вопросы о Python и решение задач"
     }
   ];
 
@@ -167,7 +157,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {features.map((feature, index) => (
               <Card 
                 key={index}
@@ -212,23 +202,7 @@ const Index = () => {
               <p>Версия 1.0.0 • Размер: ~50 МБ • Последнее обновление: 2025</p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-white/20">
-              <div className="flex flex-col items-center gap-2">
-                <Icon name="Laptop" size={32} className="text-[#3776AB]" />
-                <div className="font-semibold">Windows</div>
-                <div className="text-sm text-muted-foreground">Windows 10+</div>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <Icon name="Apple" size={32} className="text-[#3776AB]" />
-                <div className="font-semibold">macOS</div>
-                <div className="text-sm text-muted-foreground">macOS 11+</div>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <Icon name="Terminal" size={32} className="text-[#3776AB]" />
-                <div className="font-semibold">Linux</div>
-                <div className="text-sm text-muted-foreground">Ubuntu 20.04+</div>
-              </div>
-            </div>
+
           </Card>
         </div>
       </section>
