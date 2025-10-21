@@ -127,12 +127,17 @@ const Index = () => {
                 
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-[#FFD43B]/20 flex items-center justify-center flex-shrink-0 mt-1">
-                    <Icon name="Sparkles" size={18} className="text-[#FFD43B]" />
+                    <Icon name="BookOpen" size={18} className="text-[#FFD43B]" />
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm text-muted-foreground mb-2">PyHelper:</div>
+                    <div className="text-sm text-muted-foreground mb-2">Справочник:</div>
                     <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
-                      from graph import *
+                      from graph import *<br/>
+                      canvasSize(100, 100)<br/>
+                      penColor("red")<br/>
+                      brushColor("red")<br/>
+                      circle(50, 50, 50)<br/>
+                      run()
                     </div>
                   </div>
                 </div>
