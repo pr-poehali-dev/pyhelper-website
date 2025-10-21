@@ -103,10 +103,6 @@ const Index = () => {
               <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Icon name="CheckCircle2" size={18} className="text-green-500" />
-                  Windows, macOS, Linux
-                </div>
-                <div className="flex items-center gap-2">
-                  <Icon name="CheckCircle2" size={18} className="text-green-500" />
                   Бесплатно навсегда
                 </div>
               </div>
