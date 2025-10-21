@@ -33,13 +33,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <nav className="fixed top-0 w-full z-50 glass-effect border-b border-white/20">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#3776AB] to-[#FFD43B] rounded-2xl flex items-center justify-center shadow-lg">
-                <span className="text-2xl">🐍</span>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#3776AB] to-[#FFD43B] rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg">
+                <span className="text-xl sm:text-2xl">🐍</span>
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#3776AB] to-[#FFD43B] bg-clip-text text-transparent">
+              <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-[#3776AB] to-[#FFD43B] bg-clip-text text-transparent">
                 PyHelper
               </span>
             </div>
@@ -58,7 +58,8 @@ const Index = () => {
             
             <Button 
               onClick={() => scrollToSection('download')}
-              className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-all duration-300 hover:scale-105 active:scale-95"
+              className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-all duration-300 hover:scale-105 active:scale-95 text-sm sm:text-base px-3 sm:px-4"
+              size="sm"
             >
               Скачать
             </Button>
@@ -66,26 +67,26 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="pt-32 pb-20 px-6">
+      <section id="home" className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-fade-in">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className="space-y-4 sm:space-y-6 animate-fade-in">
+              <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight">
                 Ваш персональный
                 <span className="block bg-gradient-to-r from-[#3776AB] to-[#FFD43B] bg-clip-text text-transparent">
                   Python помощник
                 </span>
               </h1>
               
-              <p className="text-xl text-muted-foreground">
+              <p className="text-base sm:text-xl text-muted-foreground">
                 Учитесь, разрабатывайте и совершенствуйте навыки программирования на Python с помощью интеллектуального ассистента
               </p>
               
-              <div className="flex gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
                 <Button 
                   size="lg"
                   onClick={() => scrollToSection('download')}
-                  className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-lg px-8"
+                  className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto"
                 >
                   <Icon name="Download" className="mr-2" size={20} />
                   Скачать бесплатно
@@ -94,7 +95,7 @@ const Index = () => {
                   size="lg"
                   variant="outline"
                   onClick={() => scrollToSection('features')}
-                  className="text-lg px-8"
+                  className="text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto"
                 >
                   Узнать больше
                 </Button>
@@ -108,9 +109,9 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="relative animate-fade-in">
+            <div className="relative animate-fade-in mt-8 md:mt-0">
               <div className="absolute inset-0 bg-gradient-to-r from-[#3776AB]/20 to-[#FFD43B]/20 rounded-3xl blur-3xl animate-glow"></div>
-              <Card className="relative glass-effect p-8 space-y-4 animate-float">
+              <Card className="relative glass-effect p-4 sm:p-8 space-y-4 animate-float">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-[#3776AB]/10 flex items-center justify-center flex-shrink-0 mt-1">
                     <Icon name="Terminal" size={18} className="text-[#3776AB]" />
@@ -143,18 +144,18 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="features" className="py-20 px-6 bg-white/50 dark:bg-gray-900/50">
+      <section id="features" className="py-12 sm:py-20 px-4 sm:px-6 bg-white/50 dark:bg-gray-900/50">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="text-center mb-8 sm:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
               Возможности
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Все инструменты для эффективной работы с Python в одном приложении
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {features.map((feature, index) => (
               <Card 
                 key={index}
@@ -172,14 +173,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="download" className="py-20 px-6">
+      <section id="download" className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-4xl">
-          <Card className="glass-effect p-12 text-center space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold">
+          <Card className="glass-effect p-6 sm:p-12 text-center space-y-6 sm:space-y-8">
+            <div className="space-y-3 sm:space-y-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
                 Скачать PyHelper
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-base sm:text-xl text-muted-foreground">
                 Начните работу с вашим персональным помощником по Python прямо сейчас
               </p>
             </div>
@@ -187,7 +188,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg"
-                className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-lg px-12 py-6"
+                className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 w-full sm:w-auto"
                 onClick={() => window.open('https://drive.google.com/file/d/1mKRZtPSDBApVSjJcXNwTcCiBggFOsDab/view?usp=drive_link', '_blank')}
               >
                 <Icon name="Download" className="mr-2" size={24} />
