@@ -207,15 +207,8 @@ const Index = () => {
 
       <footer className="py-8 px-6 border-t border-white/20">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-gradient-to-br from-[#3776AB] to-[#FFD43B] rounded-xl flex items-center justify-center">
-                <span className="text-lg">🐍</span>
-              </div>
-              <span className="font-semibold">PyHelper</span>
-            </div>
-            
-            <div className="text-sm text-muted-foreground text-center md:text-right">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="text-xs text-muted-foreground text-center md:text-left">
               Данный сайт был разработан для индивидуального проекта PyHelper, созданного TimohaGeimer
             </div>
           </div>
