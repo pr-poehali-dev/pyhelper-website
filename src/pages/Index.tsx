@@ -121,7 +121,7 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <div className="text-sm text-muted-foreground mb-2">Вопрос:</div>
-                    <div className="text-foreground">Как отсортировать список словарей?</div>
+                    <div className="text-foreground">Как нарисовать красный круг?</div>
                   </div>
                 </div>
                 
@@ -132,11 +132,7 @@ const Index = () => {
                   <div className="flex-1">
                     <div className="text-sm text-muted-foreground mb-2">PyHelper:</div>
                     <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
-                      students = [&#123;'name': 'Alice'&#125;]<br/>
-                      sorted_students = sorted(<br/>
-                      &nbsp;&nbsp;students,<br/>
-                      &nbsp;&nbsp;key=lambda x: x['name']<br/>
-                      )
+                      from graph import *
                     </div>
                   </div>
                 </div>
