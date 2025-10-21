@@ -192,7 +192,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-lg px-12 py-6"
-                disabled
+                onClick={() => window.open('https://drive.google.com/file/d/1mKRZtPSDBApVSjJcXNwTcCiBggFOsDab/view?usp=drive_link', '_blank')}
               >
                 <Icon name="Download" className="mr-2" size={24} />
                 Скачать инсталятор
