@@ -191,10 +191,10 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 w-full sm:w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1mKRZtPSDBApVSjJcXNwTcCiBggFOsDab/view?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://drive.google.com/drive/folders/1KoeDnx0naHsl_NLIT7H3Ay4PxdUISEyX?usp=drive_link', '_blank')}
               >
                 <Icon name="Download" className="mr-2" size={24} />
-                Скачать инсталятор
+                Скачать приложение
               </Button>
             </div>
             
