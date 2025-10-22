@@ -211,7 +211,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-4">
             <div className="text-xs text-muted-foreground text-center md:text-left">
-              Данный сайт был разработан для индивидуального проекта PyHelper, созданного TimohaGeimer
+              Данный сайт был разработан для индивидуального проекта PyHelper, созданного TimohaGeimer. Все права защищены 2025
             </div>
           </div>
         </div>
