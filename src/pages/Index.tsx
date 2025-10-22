@@ -36,9 +36,11 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#3776AB] to-[#FFD43B] rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg">
-                <span className="text-xl sm:text-2xl">🐍</span>
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/files/ba6aefdf-35b9-413a-8a9c-696d4b9cb27a.png" 
+                alt="PyHelper" 
+                className="w-8 h-8 sm:w-10 sm:h-10"
+              />
               <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-[#3776AB] to-[#FFD43B] bg-clip-text text-transparent">
                 PyHelper
               </span>
