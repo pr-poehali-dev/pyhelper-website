@@ -1,11 +1,48 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { useState, useEffect } from "react";
 
 const Index = () => {
+  const [secretKeys, setSecretKeys] = useState<string[]>([]);
+  const [showSecretButton, setShowSecretButton] = useState(false);
+  const [secretMode, setSecretMode] = useState(false);
+  
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      const key = e.key.toUpperCase();
+      const newKeys = [...secretKeys, key].slice(-6);
+      setSecretKeys(newKeys);
+      
+      if (newKeys.join('') === 'SECRET') {
+        setShowSecretButton(true);
+      }
+    };
+    
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [secretKeys]);
+
+  const activateSecretMode = () => {
+    setSecretMode(true);
+    document.title = "You are really the idiot";
+  };
+
+  if (secretMode) {
+    return (
+      <div className="fixed inset-0 w-screen h-screen bg-black flex items-center justify-center">
+        <img 
+          src="https://cdn.poehali.dev/files/cef68498-c038-4fb1-af2e-78c28e9422b7.jpg" 
+          alt="Secret" 
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
+    );
+  }
 
   const features = [
     {
@@ -27,7 +64,13 @@ const Index = () => {
       icon: "Bug",
       title: "Отладка",
       description: "Помощь в поиске и исправлении ошибок с подробными объяснениями"
-    }
+    },
+    ...(showSecretButton ? [{
+      icon: "Eye" as const,
+      title: "Secret button",
+      description: "You found it!",
+      isSecret: true
+    }] : [])
   ];
 
   return (
@@ -163,6 +206,7 @@ const Index = () => {
                 key={index}
                 className="glass-effect p-6 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
+                onClick={(feature as any).isSecret ? activateSecretMode : undefined}
               >
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#3776AB] to-[#FFD43B] flex items-center justify-center mb-4">
                   <Icon name={feature.icon as any} size={24} className="text-white" />
