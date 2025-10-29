@@ -64,13 +64,7 @@ const Index = () => {
       icon: "Bug",
       title: "Отладка",
       description: "Помощь в поиске и исправлении ошибок с подробными объяснениями"
-    },
-    ...(showSecretButton ? [{
-      icon: "Eye" as const,
-      title: "Secret button",
-      description: "You found it!",
-      isSecret: true
-    }] : [])
+    }
   ];
 
   return (
@@ -206,7 +200,6 @@ const Index = () => {
                 key={index}
                 className="glass-effect p-6 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
-                onClick={(feature as any).isSecret ? activateSecretMode : undefined}
               >
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#3776AB] to-[#FFD43B] flex items-center justify-center mb-4">
                   <Icon name={feature.icon as any} size={24} className="text-white" />
@@ -216,6 +209,21 @@ const Index = () => {
               </Card>
             ))}
           </div>
+          
+          {showSecretButton && (
+            <div className="flex justify-center mt-8 animate-fade-in">
+              <Card 
+                className="glass-effect p-6 hover:scale-105 transition-transform duration-300 cursor-pointer max-w-md w-full"
+                onClick={activateSecretMode}
+              >
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4 mx-auto">
+                  <Icon name="Eye" size={24} className="text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-center">Secret button</h3>
+                <p className="text-muted-foreground text-center">You found it!</p>
+              </Card>
+            </div>
+          )}
         </div>
       </section>
 
