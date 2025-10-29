@@ -40,6 +40,13 @@ const Index = () => {
           alt="Secret" 
           className="max-w-full max-h-full object-contain"
         />
+        <iframe
+          className="hidden"
+          width="0"
+          height="0"
+          src="https://www.youtube.com/embed/GT5s5xdQTnY?autoplay=1&loop=1&playlist=GT5s5xdQTnY"
+          allow="autoplay"
+        />
       </div>
     );
   }
