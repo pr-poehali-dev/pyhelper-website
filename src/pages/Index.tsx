@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 const Index = () => {
   const [secretKeys, setSecretKeys] = useState<string[]>([]);
   const [showSecretButton, setShowSecretButton] = useState(false);
-  const [secretMode, setSecretMode] = useState(false);
   
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -28,28 +27,8 @@ const Index = () => {
   }, [secretKeys]);
 
   const activateSecretMode = () => {
-    setSecretMode(true);
-    document.title = "You are really the idiot";
+    window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1', '_blank');
   };
-
-  if (secretMode) {
-    return (
-      <div className="fixed inset-0 w-screen h-screen bg-black flex items-center justify-center">
-        <img 
-          src="https://cdn.poehali.dev/files/cef68498-c038-4fb1-af2e-78c28e9422b7.jpg" 
-          alt="Secret" 
-          className="max-w-full max-h-full object-contain"
-        />
-        <iframe
-          className="hidden"
-          width="0"
-          height="0"
-          src="https://www.youtube.com/embed/GT5s5xdQTnY?autoplay=1&loop=1&playlist=GT5s5xdQTnY"
-          allow="autoplay"
-        />
-      </div>
-    );
-  }
 
   const features = [
     {
