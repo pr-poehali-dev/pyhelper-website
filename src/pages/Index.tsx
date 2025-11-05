@@ -237,7 +237,7 @@ const Index = () => {
             </div>
             
             <div className="pt-4 text-sm text-muted-foreground">
-              <p>Версия 1.1 • Размер: ~40 МБ • Последнее обновление: Ноябрь 2025</p>
+              <p>Версия 1.1 • Размер: 23,5 МБ • Последнее обновление: Ноябрь 2025</p>
             </div>
             
             <div className="pt-6 border-t border-white/10">
