@@ -237,9 +237,32 @@ const Index = () => {
             </div>
             
             <div className="pt-4 text-sm text-muted-foreground">
-              <p>Версия 1.0 • Размер: ~40 МБ • Последнее обновление: Октябрь 2025</p>
+              <p>Версия 1.1 • Размер: ~40 МБ • Последнее обновление: Ноябрь 2025</p>
             </div>
             
+            <div className="pt-6 border-t border-white/10">
+              <h3 className="text-lg font-semibold mb-4">История версий</h3>
+              <div className="space-y-4 text-left max-w-2xl mx-auto">
+                <div className="space-y-2">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-medium">Версия 1.1 <span className="text-muted-foreground font-normal">• Ноябрь 2025</span></p>
+                      <p className="text-sm text-muted-foreground">Исправлен баг с нерабочим справочником</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-medium">Версия 1.0 Release <span className="text-muted-foreground font-normal">• Октябрь 2025</span></p>
+                      <p className="text-sm text-muted-foreground">Полноценный выход приложения</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </Card>
         </div>
