@@ -229,7 +229,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 w-full sm:w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1zlBsXNYQNrcGY8DLusS57bgh48QkkxRx/view?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1ken7hdaqXKiUmM-XeLAZjreMab1KWssj/view?usp=sharing', '_blank')}
               >
                 <Icon name="Download" className="mr-2" size={24} />
                 Скачать приложение
