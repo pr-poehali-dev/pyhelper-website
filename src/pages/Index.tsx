@@ -229,7 +229,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 w-full sm:w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1ken7hdaqXKiUmM-XeLAZjreMab1KWssj/view?usp=sharing', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1_K0547gSpUHrI8kBR_xh83FxCDKUhoFN/view?usp=drive_link', '_blank')}
               >
                 <Icon name="Download" className="mr-2" size={24} />
                 Скачать PyHelper (x64)
@@ -237,7 +237,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 w-full sm:w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1gAPM6TC1uz8b9S7mxzWsaYEjM69qyEE4/view?usp=sharing', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1ken7hdaqXKiUmM-XeLAZjreMab1KWssj/view?usp=sharing', '_blank')}
               >
                 <Icon name="Download" className="mr-2" size={24} />
                 Скачать PyHelper (x86)
