@@ -237,7 +237,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-[#3776AB] to-[#4B8BBE] hover:opacity-90 transition-opacity text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 w-full sm:w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1ken7hdaqXKiUmM-XeLAZjreMab1KWssj/view?usp=sharing', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1gAPM6TC1uz8b9S7mxzWsaYEjM69qyEE4/view?usp=sharing', '_blank')}
               >
                 <Icon name="Download" className="mr-2" size={24} />
                 Скачать PyHelper (x86)
@@ -245,7 +245,7 @@ const Index = () => {
             </div>
             
             <div className="pt-4 text-sm text-muted-foreground">
-              <p>Версия 1.1 • Размер: 23,5 МБ • Последнее обновление: Ноябрь 2025</p>
+              <p>Версия 1.2 • Размер: 48,4 МБ • Последнее обновление: Ноябрь 2025</p>
             </div>
             
             <div className="pt-6 border-t border-white/10">
@@ -254,6 +254,15 @@ const Index = () => {
                 <div className="space-y-2">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-medium">Версия 1.2 <span className="text-muted-foreground font-normal">• Ноябрь 2025</span></p>
+                      <p className="text-sm text-muted-foreground">Выпущена версия для 86-разрядных систем, исправлен баг со справочником. Фикс мелких ошибок</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="font-medium">Версия 1.1 <span className="text-muted-foreground font-normal">• Ноябрь 2025</span></p>
                       <p className="text-sm text-muted-foreground">Исправлен баг с нерабочим справочником</p>
